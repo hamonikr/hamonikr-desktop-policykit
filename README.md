@@ -18,4 +18,40 @@ Polkit은 GUI 애플리케이션의 권한을 관리하는 데 주로 사용되�
 
 Polkit 규칙을 통해 apt update, apt upgrade, apt install 명령어를 비밀번호 없이 실행할 수 있도록 설정하는 것은 일반적으로 불가능합니다. 
 
+## pkaction
 
+pkaction 명령어를 사용하여 특정 애플리케이션에 대한 권한을 설정할 수 있습니다.
+
+```
+pkaction --verbose --user-context=user:user --action-id=org.freedesktop.policykit.exec -- --help
+```
+
+### 액션 전체 조회
+
+```
+pkaction
+```
+
+### 액션 조회
+
+```
+pkaction --verbose --action-id org.debian.apt.upgrade-packages
+```
+
+### 액션 추가
+
+```
+pkaction --add --action-id org.debian.apt.upgrade-packages --description "Upgrade all packages to their latest versions" --message "The upgrade will require a restart" --icon-name "system-software-update" --confirm-button "Upgrade" --cancel-button "Cancel" --default-button "Upgrade" --verb "Upgrade" --user-context=user:user
+```
+
+### 액션 삭제
+
+```
+pkaction --remove --action-id org.debian.apt.upgrade-packages
+```
+
+### 액션 수정
+
+```
+pkaction --modify --action-id org.debian.apt.upgrade-packages --description "Upgrade all packages to their latest versions" --message "The upgrade will require a restart" --icon-name "system-software-update" --confirm-button "Upgrade" --cancel-button "Cancel" --default-button "Upgrade" --verb "Upgrade" --user-context=user:user
+``` 
