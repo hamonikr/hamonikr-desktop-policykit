@@ -1,0 +1,18 @@
+// Allow gparted for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.gnome.gparted" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});
+
+// Allow user and group management for desktop users
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.freedesktop.accounts.user-administration" ||
+         action.id == "org.cinnamon.settings-users") &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});

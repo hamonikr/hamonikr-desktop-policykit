@@ -1,0 +1,14 @@
+[Allow apt commands for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.debian.apt.update;org.debian.apt.upgrade;org.debian.apt.install
+ResultActive=yes
+
+[Allow gparted for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.gnome.gparted
+ResultActive=yes
+
+[Allow user and group management for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.freedesktop.accounts.user-administration;org.cinnamon.settings-users
+ResultActive=yes

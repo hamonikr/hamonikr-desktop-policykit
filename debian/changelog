@@ -1,0 +1,5 @@
+hamonikr-desktop-policykit (1.0.0) paektu; urgency=medium
+
+  * Add new rules for hamonikr desktop
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 25 Sep 2024 17:57:01 +0900
