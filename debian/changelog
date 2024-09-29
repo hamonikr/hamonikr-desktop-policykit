@@ -1,4 +1,4 @@
-hamonikr-desktop-policykit (1.0.1) paektu; urgency=medium
+hamonikr-desktop-policykit (1.0.2) paektu; urgency=medium
 
   * Add apt install file, apt install or remove packages
 
