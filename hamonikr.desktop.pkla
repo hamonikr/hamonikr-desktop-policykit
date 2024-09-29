@@ -42,3 +42,8 @@ ResultActive=yes
 Identity=unix-group:admin;unix-group:sudo
 Action=org.nemo.root
 ResultActive=yes
+
+[Allow timeshift for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=in.teejeetech.pkexec.timeshift-gtk
+ResultActive=yes

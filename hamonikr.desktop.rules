@@ -70,3 +70,12 @@ polkit.addRule(function(action, subject) {
             return polkit.Result.YES;
     }
 });
+
+// Allow timeshift for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "in.teejeetech.pkexec.timeshift-gtk" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});
