@@ -1,3 +1,9 @@
+hamonikr-desktop-policykit (1.0.3) paektu; urgency=medium
+
+  * Allow synaptic for desktop users
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 29 Sep 2024 19:58:37 +0900
+
 hamonikr-desktop-policykit (1.0.2) paektu; urgency=medium
 
   * Add apt install file, apt install or remove packages

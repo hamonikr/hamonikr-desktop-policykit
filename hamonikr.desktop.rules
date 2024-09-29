@@ -124,3 +124,12 @@ polkit.addRule(function(action, subject) {
             return polkit.Result.YES;
     }
 });
+
+// Allow synaptic for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "com.ubuntu.pkexec.synaptic" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});

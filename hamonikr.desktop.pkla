@@ -72,3 +72,8 @@ ResultActive=yes
 Identity=unix-group:admin;unix-group:sudo
 Action=org.debian.apt.install-purchased-packages
 ResultActive=yes
+
+[Allow synaptic for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=com.ubuntu.pkexec.synaptic
+ResultActive=yes
