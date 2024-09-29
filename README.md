@@ -1,5 +1,7 @@
 # Hamonikr Desktop PolicyKit
 
+![app](./app.png)
+
 이 패키지는 데스크탑 사용자가 GUI 애플리케이션의 권한을 관리하는 데 사용됩니다.
 
 리눅스를 데스크탑으로 사용하다보면 비밀번호 없이 프로그램을 실행하고 싶은 경우가 있습니다.
@@ -18,6 +20,10 @@
 - boot-select
 - file operations
 - nemo root
+- timeshift
+- apt install file
+- apt install or remove packages
+
 
 ## 참고 사항
 
