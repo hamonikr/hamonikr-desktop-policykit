@@ -1,7 +1,7 @@
 Source: hamonikr-desktop-policykit
 Section: admin
 Priority: optional
-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Maintainer: Kevin Kim <chaeya@gmail.com>
 Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.2.0
 

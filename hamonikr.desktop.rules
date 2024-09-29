@@ -16,3 +16,57 @@ polkit.addRule(function(action, subject) {
             return polkit.Result.YES;
     }
 });
+
+// Allow lightdm settings for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.x.lightdm-settings" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});
+
+// Allow gufw for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "com.ubuntu.pkexec.gufw" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});
+
+// Allow mintsources for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "com.linuxmint.mintsources" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});
+
+// Allow boot-select for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.hamonikr.pkexec.boot-select" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});
+
+// Allow file operations for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.gtk.vfs.file-operations" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});
+
+// Allow nemo root for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.nemo.root" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});
