@@ -1,3 +1,9 @@
+hamonikr-desktop-policykit (1.0.1) paektu; urgency=medium
+
+  * Add timeshift to hamonikr desktop policykit
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 29 Sep 2024 09:42:38 +0900
+
 hamonikr-desktop-policykit (1.0.0) paektu; urgency=medium
 
   * Add new rules for hamonikr desktop
