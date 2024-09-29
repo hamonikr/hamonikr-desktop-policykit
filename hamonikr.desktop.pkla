@@ -47,3 +47,28 @@ ResultActive=yes
 Identity=unix-group:admin;unix-group:sudo
 Action=in.teejeetech.pkexec.timeshift-gtk
 ResultActive=yes
+
+[Allow apt install file for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.debian.apt.install-file
+ResultActive=yes
+
+[Allow apt install or remove packages for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.debian.apt.install-or-remove-packages
+ResultActive=yes
+
+[Allow apt install packages from new repo for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.debian.apt.install-packages-from-new-repo
+ResultActive=yes
+
+[Allow apt install packages from high trust repo for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.debian.apt.install-packages.high-trust-repo
+ResultActive=yes
+
+[Allow apt install purchased packages for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.debian.apt.install-purchased-packages
+ResultActive=yes

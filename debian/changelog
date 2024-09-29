@@ -1,5 +1,11 @@
 hamonikr-desktop-policykit (1.0.1) paektu; urgency=medium
 
+  * Add apt install file, apt install or remove packages
+
+ -- HamoniKR <pkg@hamonikr.org>  Sun, 29 Sep 2024 10:06:07 +0900
+
+hamonikr-desktop-policykit (1.0.1) paektu; urgency=medium
+
   * Add timeshift to hamonikr desktop policykit
 
  -- HamoniKR <pkg@hamonikr.org>  Sun, 29 Sep 2024 09:42:38 +0900
