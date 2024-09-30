@@ -133,3 +133,12 @@ polkit.addRule(function(action, subject) {
             return polkit.Result.YES;
     }
 });
+
+// Allow policykit exec for desktop users
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.freedesktop.policykit.exec" &&
+        subject.active == true && subject.local == true &&
+        subject.isInGroup("sudo")) {
+            return polkit.Result.YES;
+    }
+});

@@ -77,3 +77,8 @@ ResultActive=yes
 Identity=unix-group:admin;unix-group:sudo
 Action=com.ubuntu.pkexec.synaptic
 ResultActive=yes
+
+[Allow policykit exec for desktop users]
+Identity=unix-group:admin;unix-group:sudo
+Action=org.freedesktop.policykit.exec
+ResultActive=yes
